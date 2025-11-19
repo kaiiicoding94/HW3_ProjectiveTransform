@@ -15,8 +15,10 @@ int main()
 	// -------------------------------------------------
 	// 1. Load image
 	// -------------------------------------------------
-	string imgPath = "input.jpg";  // 你可改成自己的路牌圖片
-	Mat src = imread(imgPath, IMREAD_GRAYSCALE);
+	string imgPath;
+	cout << "Please enter the path to the image file: ";
+	cin >> imgPath;
+	Mat src = imread(imgPath, IMREAD_COLOR);
 
 	if (src.empty())
 	{

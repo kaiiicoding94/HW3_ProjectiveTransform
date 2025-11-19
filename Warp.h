@@ -3,10 +3,10 @@
 
 #include <opencv2/opencv.hpp>
 
-// Âù½u©Ê´¡­È
-uchar bilinearInterpolation(const cv::Mat& img, double x, double y);
+// ï¿½ï¿½ï¿½uï¿½Ê´ï¿½ï¿½ï¿½
+cv::Vec3b bilinearInterpolation(const cv::Mat& img, double x, double y);
 
-// ¤Ï¦V¬M®g + ®M¥Î homography
+// ï¿½Ï¦Vï¿½Mï¿½g + ï¿½Mï¿½ï¿½ homography
 cv::Mat warpPerspectiveCustom(
     const cv::Mat& src,
     const cv::Mat& Hinv,
